@@ -1,0 +1,232 @@
+/* start global root */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --padding-general: padding:60px 0;
+    --margin-right: margin-right:20px;
+
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 90%;
+}
+ul{
+    list-style: none;
+}
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+   }
+   /* medium */
+   @media (min-width:992px) {
+    .container{
+        width: 970px;
+    }
+   }
+   /* large */
+   @media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+   }
+/* End global root */
+/* start header */
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#27226b;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 0 60px;
+}
+header .container .logo{
+    height: 80px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+header .container nav{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media (max-width:768px) {
+    header .container .logo{
+        font-size: 20px;
+        margin-left: 140px;
+}
+    header .container{
+        display: block;
+        max-width: 750;
+        text-align: center;
+        padding: 0;
+        margin-left: 20.9px;
+}
+header .container nav ul{
+    display: inline-block;
+    margin-left: -300px;
+}
+header .container nav ul li a{
+    font-size: 10px;
+}
+
+   }
+header .container nav ul{
+    display: flex;
+}
+header .container nav ul li a{
+    padding: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+/* End header */
+/* start landing section */
+section .container{
+    background-color: #007bff;
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    align-items: center;
+}
+section .container img{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    
+}
+section .container h2{
+    color:white;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 2;
+    text-align:center;
+    justify-self: start;
+    margin: 0;
+}
+section .container h2 span{
+    display: block;
+    font-size: 50px;
+    font-weight:bolder;
+}
+@media (max-width:768px){
+    section .container{
+    max-width: 750px;
+}
+section .container img{
+    height: 200px;
+    width: 200px;
+}
+section .container h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+section .container h2 span{
+    font-size: 30px;
+}
+}
+/* End landing section */
+/* start services */
+.skill .container{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.skill .container h2{
+    font-size: 40px;
+    margin: 50px 0 20px 50px;
+    font-weight: 800;
+}
+.skill .container .info{
+    justify-self: flex-start;
+    width: 50%;
+}
+.skill .container h3{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 40px 0;
+    margin: 20px 0;
+}
+.skill .container .skill-bar {
+    background-color: #8a8585;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill .container .skill-bar .skill-fill {
+    height: 100%;
+    background-color:#007bff;
+    width: 0;
+    transition: width 0.5s ease;
+}
+/* End services */
+/* start Project */
+.project .container{
+    margin-top: 5px;
+    background-color: #eee7e7;
+}
+.project .container h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    padding: 50px 0 0 50px;
+}
+.project .container .card{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 30px;
+    text-align: center;
+    
+}
+.project .container .card .text h3{
+ font-weight: 600;
+ font-size: 20px;
+ color: #007bff;
+}
+.project .container .card .text p{
+    line-height: 1.8;
+    color: #27226b;
+}
+/* End Project  */
+/* start footer */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #27226b;
+    color: #f9f9f9;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px ;
+}
+footer p:only-of-type{
+    margin: 0;
+    padding: 30px 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+footer div:only-of-type{
+    margin: 0;
+    padding: 30px 0;
+    font-weight: 400;
+    font-size: 20px;
+}
+/* End footer */
